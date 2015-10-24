@@ -1,5 +1,39 @@
 \documentclass[fyp]{socreport}
 \usepackage{fullpage}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[framemethod=tikz]{mdframed}
+
+\titleformat{\chapter}{\normalfont\huge\bfseries}{\thechapter.}{20pt}{\huge}
+
+\definecolor{almostwhite}{rgb}{0.96,0.96,0.96}
+\definecolor{maroon}{rgb}{0.74,0.11,0.31}
+\definecolor{green}{rgb}{0.11,0.54,0.12}
+
+\lstset{
+language=Java, % for proper highlighting of escaped quotes
+basicstyle=\ttfamily,
+keywordstyle=\color{maroon},
+stringstyle=\color{green},
+morekeywords={let,rec,if,then,else,match,with,in,type,ref,function,fun},
+tabsize=2,
+% no background colour vertical margin is not adjusted
+% backgroundcolor=\color{almostwhite},
+showstringspaces=false,
+columns=fullflexible,
+belowskip=3em, % vertical padding
+aboveskip=3em,
+}
+
+% horizontal padding
+\surroundwithmdframed[
+  hidealllines=true,
+  innerleftmargin=15pt,
+  innertopmargin=0pt,
+  innerbottommargin=0pt]{lstlisting}
+
 \begin{document}
 \pagenumbering{roman}
 \title{Design and Implementation of an Algorithm for a Problem}

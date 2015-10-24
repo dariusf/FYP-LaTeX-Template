@@ -86,7 +86,7 @@
 \newenvironment{keywords}[1]
                {\parindent 0em
 			   \parsep \z@
-			   \vspace{1cm}Keywords: 
+			   \vspace{1cm}Keywords:
 			   \parindent 1.5em%
 
 			   #1}
@@ -94,12 +94,12 @@
 \newenvironment{implement}[1]
                {\parindent 0em
 			   \parsep \z@
-			   \vspace{1cm}Implementation Software and Hardware: 
+			   \vspace{1cm}Implementation Software and Hardware:
 			   \parindent 1.5em%
 
 			   #1}
                {\par}
-                                                                                                              
+
   \newenvironment{acknowledgement}{%
       \titlepage
       \doublespacing
@@ -378,7 +378,7 @@
 % outdented (first line is flush with left margin)
 
 \def\@biblabel#1{}
-\def\@lbibitem[#1]#2{\item[\@biblabel{#1}]\hskip -\leftmargin\if@filesw 
+\def\@lbibitem[#1]#2{\item[\@biblabel{#1}]\hskip -\leftmargin\if@filesw
       {\def\protect##1{\string ##1\space}\immediate
         \write\@auxout{\string\bibcite{#2}{#1}}}\fi\ignorespaces}
 
@@ -478,7 +478,7 @@
   (UROP) Project Report \\
 \else
   \if@fyp
-     Final Year Project Report \\
+     Final Year Project Continual Assessment Report \\
    \else
      \errmessage{Unknown project type. Please use option fyp or urop in documentclass}
   \fi
@@ -487,7 +487,7 @@
 \Large \textbf{\@title} \vspace{2 cm} \large \\
 By \\ \vspace{.5cm}
 \@author \\
-\vspace{2 cm} 
+\vspace{2 cm}
 Department of Computer Science \\  \vspace{.5cm}
 School of Computing \\ \vspace{.5cm}
 National University of Singapore \\ \vspace{1cm}
@@ -505,14 +505,14 @@ National University of Singapore \\ \vspace{1cm}
   \if@fyp
     Final Year Project Report \\
    \else
-    
+
   \fi
 \fi
 \vspace{1 cm}
 \Large \textbf{\@title} \vspace{2 cm} \large \\
 By \\ \vspace{.5cm}
 \@author \\
-\vspace{2 cm} 
+\vspace{2 cm}
 Department of Computer Science \\  \vspace{.5cm}
 School of Computing \\ \vspace{.5cm}
 National University of Singapore \\ \vspace{1cm}
@@ -525,7 +525,7 @@ Project No: \@pjnumber
 
 Advisor: \@advisor
 
-Deliverables: 
+Deliverables:
   \begin{list}{}{%
 	\setlength{\leftmargin}{4em}
 	\setlength{\topsep}{0pt}
