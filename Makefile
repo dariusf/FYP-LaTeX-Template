@@ -1,6 +1,12 @@
 FILE=socreport
 BIBFILE=socreport
 
+all:
+	pdflatex socreport
+	bibtex socreport
+	pdflatex socreport
+	pdflatex socreport
+
 $(FILE).pdf: $(FILE).tex socreport.cls $(FILE).aux $(FILE).toc $(BIBFILE).bbl 
 	pdflatex $(FILE).tex
 	pdflatex $(FILE).tex
